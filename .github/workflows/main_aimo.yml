@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'Aimo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C66D51C1406D4F40B490F1D190ACA039 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A1BEE93273904B85A879F7973F771104 }}
           package: .
