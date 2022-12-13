@@ -1,0 +1,33 @@
+.bound {
+  border: solid;
+  border-color: black;
+  border-width: 3px;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+figcaption, p {
+  font-family: Rosarivo, serif;
+}
+
+body {
+  background-color: #fcfcfc
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
