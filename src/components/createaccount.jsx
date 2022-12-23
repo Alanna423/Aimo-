@@ -9,6 +9,7 @@ const CreateAccount = (props) => {
 
     return ( 
         <div>
+            <p>yes, I am real man, want to go skateboards?</p>
         <form name='createAccountForm'>
             <input
             type='text'
