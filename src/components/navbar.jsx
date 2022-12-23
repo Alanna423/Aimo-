@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-const NavBar = () => {
-    let totalCounters = " " + 4
+const NavBar = (props) => {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -10,10 +9,11 @@ const NavBar = () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href='#'>Home <span class="sr-only">(current)</span></a>
                     <a class="nav-link" href="#">Requests</a>
                     <a class="nav-link" href="#">Profile</a>
                     <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" onClick={props.onReturnHome}>Logout</a>
                 </div>
             </div>
         </nav>
