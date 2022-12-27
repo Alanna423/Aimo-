@@ -36,41 +36,21 @@ function App() {
 
   return (
     <main> {
-      // loggedIn === false ?
-      //   hasAccount === true ?
-      //     <div>
-      //       <Login
-      //         onLogInSubmit={handleLogInSubmit}
-      //         onCreateAccount={handleAccount}
-      //         user={user}
-      //       />
-      //     </div>
-      //     :
-      //     <CreateAccount
-      //       onAccountSubmit={handleAccountSubmit}
-      //       onLogIn={handleLogIn}
-      //     />
-      //   :
-      // <React.Fragment>
-      //   {/* <NavBar
-      //     onReturnHome={handleReturnHome}
-      //   > */}
-
-      // loggedIn === false ?
-      //   hasAccount === true ?
-      //     <div>
-      //       <Login
-      //         onLogInSubmit={handleLogInSubmit}
-      //         onCreateAccount={handleAccount}
-      //         user={user}
-      //       />
-      //     </div>
-      //     :
-      //     <CreateAccount
-      //       onAccountSubmit={handleAccountSubmit}
-      //       onLogIn={handleLogIn}
-      //     />
-      //   :
+      loggedIn === false ?
+        hasAccount === true ?
+          <div>
+            <Login
+              onLogInSubmit={handleLogInSubmit}
+              onCreateAccount={handleAccount}
+              user={user}
+            />
+          </div>
+          :
+          <CreateAccount
+            onAccountSubmit={handleAccountSubmit}
+            onLogIn={handleLogIn}
+          />
+        :
       <React.Fragment>
         <NavBar
           onReturnHome={handleReturnHome}
