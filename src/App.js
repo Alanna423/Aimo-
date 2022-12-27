@@ -5,6 +5,10 @@ import Login from './components/login';
 import CreateAccount from './components/createaccount';
 import NavBar from './components/navbar';
 import Home from './components/home';
+import Requests from './components/requests';
+import Profile from './components/profile';
+import About from './components/about';
+import Pages from './components/pages';
 
 function App() {
   const [loggedIn, setLogIn] = useState(false);
@@ -32,36 +36,54 @@ function App() {
 
   return (
     <main> {
-      loggedIn === false ?
-        hasAccount === true ?
-          <div>
-            <Login
-              onLogInSubmit={handleLogInSubmit}
-              onCreateAccount={handleAccount} 
-              user={user}
-            />
-          </div>
-          :
-          <CreateAccount
-            onAccountSubmit={handleAccountSubmit}
-            onLogIn={handleLogIn}
-          />
-        :
-        <React.Fragment>
-          <NavBar
-            onReturnHome={handleReturnHome}
-          ></NavBar>
-          <div className='container'>
-            <Home user={user}></Home>
-          </div>
-        </React.Fragment>
+      // loggedIn === false ?
+      //   hasAccount === true ?
+      //     <div>
+      //       <Login
+      //         onLogInSubmit={handleLogInSubmit}
+      //         onCreateAccount={handleAccount}
+      //         user={user}
+      //       />
+      //     </div>
+      //     :
+      //     <CreateAccount
+      //       onAccountSubmit={handleAccountSubmit}
+      //       onLogIn={handleLogIn}
+      //     />
+      //   :
+      // <React.Fragment>
+      //   {/* <NavBar
+      //     onReturnHome={handleReturnHome}
+      //   > */}
+
+      // loggedIn === false ?
+      //   hasAccount === true ?
+      //     <div>
+      //       <Login
+      //         onLogInSubmit={handleLogInSubmit}
+      //         onCreateAccount={handleAccount}
+      //         user={user}
+      //       />
+      //     </div>
+      //     :
+      //     <CreateAccount
+      //       onAccountSubmit={handleAccountSubmit}
+      //       onLogIn={handleLogIn}
+      //     />
+      //   :
+      <React.Fragment>
+        <NavBar
+          onReturnHome={handleReturnHome}
+        />
+          <Pages />
+      </React.Fragment>
     }
     </main>
   );
 
-    function handleReturnHome() {
-      setLogIn(false)
-    }
+  function handleReturnHome() {
+    setLogIn(false)
+  }
 
 }
 

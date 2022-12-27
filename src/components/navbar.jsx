@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 
 const NavBar = (props) => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="#">Navbar</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href='#'>Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Requests</a>
-                    <a class="nav-link" href="#">Profile</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" onClick={props.onReturnHome}>Logout</a>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav">
+                    <a className="nav-link active" href='/home'>Home <span class="sr-only">(current)</span></a>
+                    <a className="nav-link" href="/requests">Requests</a>
+                    <a className="nav-link" href="/profile">Profile</a>
+                    <a className="nav-link" href="/about">About TIF3</a>
+                    <a className="nav-link" onClick={props.onReturnHome}>Logout</a>
                 </div>
             </div>
         </nav>

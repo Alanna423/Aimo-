@@ -8,6 +8,7 @@ function Home(props) {
         <div>
             <h1>Welcome {thing}</h1>
             <p>This is a TIF3 project!</p>
+            <p>*insert how to use Aimo*</p>
         </div>
     );
 }
